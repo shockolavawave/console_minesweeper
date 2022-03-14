@@ -120,7 +120,7 @@ class xon{
                 }
 
                 // left edge cells
-                if (i != 0 && i != (row - 1) && j == 1) {
+                if (i != 0 && i != (row - 1) && j == 0) {
 
                     if(mat[i-1][j]   == '\u2022') count++;
                     if(mat[i-1][j+1] == '\u2022') count++;
@@ -136,7 +136,7 @@ class xon{
 
                 // middle cells
                 if (i != 0 && j != 0 &&
-                    i != (col - 1) && j != (row - 1)) {
+                    i != (row - 1) && j != (col - 1)) {
 
                     if(mat[i-1][j-1] == '\u2022') count++;
                     if(mat[i-1][j]   == '\u2022') count++;
