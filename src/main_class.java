@@ -9,7 +9,7 @@ class xon{
 
         int mines = (int) ((float)row*col*15)/100;      // percent of mines is can be changed
         boolean control = true;
-        int mod = (row*col)/mines + 1;          // most important variable
+        int mod = (row*col)/mines + 2;          // most important variable
         int buff;
         int fails = 0;
 
